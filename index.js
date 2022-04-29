@@ -17,7 +17,6 @@ const server = app.listen(port, () => {
 //// a04 database stuff ////
 
 const morgan = require('morgan')
-const errorhandler = require('errorhandler')
 const fs = require('fs')
 
 // require database
