@@ -143,8 +143,8 @@ app.get('/app/flip', (req, res) => {
 });
 
 // endpoint for flips/:number
-app.get('/app/flips/:number', (req, res) => {
-  const raw = coinFlips(req.params.number)
+app.post('/app/flips/:number', (req, res) => {
+  const raw = coinFlips(req.body.number)
   const summary = countFlips(raw)
   res.status(200).json({ 'raw': raw, 'summary': summary })
   res.type('application/json')
