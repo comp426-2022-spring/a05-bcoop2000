@@ -168,3 +168,8 @@ app.use(function (req, res) {
   res.status(404).end('404 NOT FOUND')
   res.type("text/plain")
 });
+
+// a05 type stuff
+
+// Serve static HTML files
+app.use(express.static('./public'));
