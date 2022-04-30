@@ -12,6 +12,10 @@ div.active {
   font-size: x-large;
 }
 
+.coinresult {
+  text-transform: uppercase;
+}
+
 img.bigcoin {
   width: 200px;
 }
