@@ -144,7 +144,7 @@ curl http://localhost:5000/app/flip/coin/
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/call/:guess/
 ```
 
 #### Response body
