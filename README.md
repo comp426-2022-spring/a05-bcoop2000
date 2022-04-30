@@ -130,7 +130,7 @@ curl http://localhost:5000/app/flip/coin/
 #### Response body
 
 ```
-
+"heads"
 ```
 
 #### Response headers
