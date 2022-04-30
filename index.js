@@ -163,10 +163,10 @@ app.post('/app/flips/:number', (req, res) => {
 
 
 // non-existent endpoint handling
-app.use(function (req, res) {
-  res.status(404).end('404 NOT FOUND')
-  res.type("text/plain")
-});
+app.use(function (req, res, next) {
+    res.json({ "message": "Error 404: Not found!" })
+    res.status(404)
+  })
 
 // a05 type stuff
 
