@@ -13,6 +13,8 @@ const server = app.listen(port, () => {
     console.log(`App running on port ${port}`)
   });
 
+// Serve static HTML files
+app.use(express.static('./public'));
 
 //// a04 database stuff ////
 
@@ -149,25 +151,6 @@ app.post('/app/flips/:number', (req, res) => {
   res.type('application/json')
 });
 
-// // endpoint for call/heads
-// app.get('/app/flip/call/heads', (req, res) => {
-//   res.status(200).json(flipACoin('heads'))
-//   res.type('application/json')
-// });
-
-// // endpoint for call/tails
-// app.get('/app/flip/call/tails', (req, res) => {
-//   res.status(200).json(flipACoin('tails'))
-//   res.type('application/json')
-// });
-
-
-// non-existent endpoint handling
-app.use(function (req, res, next) {
-    res.json({ "message": "Error 404: Not found!" })
-    res.status(404)
-  })
-
 // a05 type stuff
 
 // endpoint for app/flip/coins
@@ -188,5 +171,21 @@ app.get('/app/flip/call/:guess(heads|tails)/', (req, res, next) => {
     res.status(200).json(game)
   })
 
-// Serve static HTML files
-app.use(express.static('./public'));
+// // endpoint for call/heads
+// app.get('/app/flip/call/heads', (req, res) => {
+//   res.status(200).json(flipACoin('heads'))
+//   res.type('application/json')
+// });
+
+// // endpoint for call/tails
+// app.get('/app/flip/call/tails', (req, res) => {
+//   res.status(200).json(flipACoin('tails'))
+//   res.type('application/json')
+// });
+
+
+// non-existent endpoint handling
+app.use(function (req, res, next) {
+    res.json({ "message": "Error 404: Not found!" })
+    res.status(404)
+  })
