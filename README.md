@@ -238,7 +238,7 @@ curl http://localhost:5000/app/log/access/
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/log/access/
 ```
 
 #### Response body
