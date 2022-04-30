@@ -110,7 +110,7 @@ curl http://localhost:5000/app/flips/:number/
 #### Response body
 
 ```
-
+{'heads': head_count, 'tails': tail_count}
 ```
 
 #### Response headers
