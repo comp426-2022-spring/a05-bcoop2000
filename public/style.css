@@ -2,8 +2,10 @@ div.hidden {
   display: none;
 }
 
-div.hearthstone {
-  
+.hearthstone {
+  text-align: center;
+  color: brown;
+  font-size: large;
 }
 
 div.active {
