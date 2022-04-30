@@ -326,7 +326,7 @@ _Not yet implemented_
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/user/update/
 ```
 
 #### Response body
