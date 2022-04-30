@@ -133,22 +133,28 @@ function flipACoin(call) {
 
 // initial app status
 app.get('/app', (req, res) => {
-  res.status(200).end('OK')
-  res.type('text/plain')
+    res.type('text/plain')
+    res.status(200).end('OK')
 })
 
 // endpoint for flip
 app.get('/app/flip', (req, res) => {
-  res.status(200).json({ 'flip': coinFlip() })
-  res.type('application/json')
+    res.type('application/json')
+    res.status(200).json({ 'flip': coinFlip() })
 });
+
+// endpoint for app/flip/coin
+app.get('/app/flip/coin', (req, res) => {
+    res.type('application/json')
+    res.status(200).json({ 'flip': coinFlip() })
+  });
 
 // endpoint for flips/:number
 app.post('/app/flips/:number', (req, res) => {
   const raw = coinFlips(req.body.number)
   const summary = countFlips(raw)
-  res.status(200).json({ 'raw': raw, 'summary': summary })
   res.type('application/json')
+  res.status(200).json({ 'raw': raw, 'summary': summary })
 });
 
 // a05 type stuff
