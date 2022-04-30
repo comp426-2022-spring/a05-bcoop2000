@@ -124,7 +124,7 @@ curl http://localhost:5000/app/flips/:number/
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/coin/
 ```
 
 #### Response body
