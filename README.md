@@ -150,7 +150,7 @@ curl http://localhost:5000/app/flip/call/:guess/
 #### Response body
 
 ```
-
+{"call":"heads","flip":"heads","result":"win"}
 ```
 
 #### Response headers
