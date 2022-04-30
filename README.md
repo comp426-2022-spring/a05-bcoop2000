@@ -104,7 +104,7 @@ curl http://localhost:5000/app/flip/
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flips/:number/
 ```
 
 #### Response body
