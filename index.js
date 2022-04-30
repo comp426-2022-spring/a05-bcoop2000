@@ -183,7 +183,7 @@ app.post('/app/flip/call/', (req, res, next) => {
     res.status(200).json(game)
 })
 
-app.post('/app/flip/call/:guess(heads|tails)/', (req, res, next) => {
+app.get('/app/flip/call/:guess(heads|tails)/', (req, res, next) => {
     const game = flipACoin(req.body.guess)
     res.status(200).json(game)
   })
