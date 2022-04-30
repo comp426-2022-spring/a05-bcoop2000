@@ -149,17 +149,17 @@ app.post('/app/flips/:number', (req, res) => {
   res.type('application/json')
 });
 
-// endpoint for call/heads
-app.get('/app/flip/call/heads', (req, res) => {
-  res.status(200).json(flipACoin('heads'))
-  res.type('application/json')
-});
+// // endpoint for call/heads
+// app.get('/app/flip/call/heads', (req, res) => {
+//   res.status(200).json(flipACoin('heads'))
+//   res.type('application/json')
+// });
 
-// endpoint for call/tails
-app.get('/app/flip/call/tails', (req, res) => {
-  res.status(200).json(flipACoin('tails'))
-  res.type('application/json')
-});
+// // endpoint for call/tails
+// app.get('/app/flip/call/tails', (req, res) => {
+//   res.status(200).json(flipACoin('tails'))
+//   res.type('application/json')
+// });
 
 
 // non-existent endpoint handling
