@@ -166,7 +166,6 @@ app.post('/app/flip/coins/', (req, res, next) => {
     res.status(200).json({"raw":flips,"summary":count})
 })
 
-
 app.post('/app/flip/call/', (req, res, next) => {
     const game = flipACoin(req.body.guess)
     res.status(200).json(game)
