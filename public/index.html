@@ -27,22 +27,30 @@
   </head>
   <body>
     <nav>
-      <button id="homenav">Home</button>
-      <button id="singlenav">Flip one coin</button>
-      <button id="multinav">Flip multiple coins</button>
-      <button id="guessnav">Guess the result</button>
+      <button id="homenav" onclick="focusOnHome()">Home</button>
+      <button id="singlenav" onclick="focusOnSingle()">Flip one coin</button>
+      <button id="multinav" onclick="focusOnMulti()">Flip multiple coins</button>
+      <button id="guessnav" onclick="focusOnGuess()">Guess the result</button>
     </nav>
-    <div id="home">
-      
+    <div id="home" class="hearthstone">
+      <p>Welcome Back! It's good to see ya! Pull up a chair by the Hearth...</p>
+      <p>let's flip some coins.</p>
     </div>    
-    <div id="single" class="hidden">
-      
+    <div id="single" class="active">
+      <p>We doing one flip right now!</p>
+      <p><button id="singlebutton" onclick="flipSingle()">flip</button></p>
+      <img src="./assets/img/coin.png" id="quarter"  width="150" height="150">
+      <br></br>
+      <p>Here's the result:</p>
+      <p id="result" class="coinresult"></p>
     </div>
     <div id="multi" class="hidden">
-      
+      <p>Broken! Come back later</p>
+      <p>sorry...</p>
     </div>
     <div id="guess" class="hidden">
-      
+      <p>Also broken! Come back later</p>
+      <p>sorry...</p>
     </div>
 	<script src="main.js"></script>
   </body>

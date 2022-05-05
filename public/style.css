@@ -2,14 +2,24 @@ div.hidden {
   display: none;
 }
 
+.hearthstone {
+  text-align: center;
+  color: brown;
+  font-size: large;
+}
+
 div.active {
-  border: 5px solid red;
+  font-size: x-large;
+}
+
+.coinresult {
+  text-transform: uppercase;
 }
 
 img.bigcoin {
-  width: 50px;
+  width: 200px;
 }
 
 img.smallcoin {
-  width: 50px;
+  width: 100px;
 }

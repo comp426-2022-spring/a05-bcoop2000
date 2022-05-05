@@ -84,7 +84,7 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/
 ```
 
 #### Response body
@@ -104,13 +104,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flips/:number/
 ```
 
 #### Response body
 
 ```
-
+{'heads': head_count, 'tails': tail_count}
 ```
 
 #### Response headers
@@ -124,13 +124,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/coin/
 ```
 
 #### Response body
 
 ```
-
+"heads"
 ```
 
 #### Response headers
@@ -144,13 +144,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/call/:guess/
 ```
 
 #### Response body
 
 ```
-
+{"call":"heads","flip":"heads","result":"win"}
 ```
 
 #### Response headers
@@ -218,7 +218,7 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/log/access/
 ```
 
 #### Response body
@@ -238,7 +238,7 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/log/access/
 ```
 
 #### Response body
@@ -260,7 +260,7 @@ _Not yet implemented_
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/log/error/
 ```
 
 #### Response body
@@ -282,7 +282,7 @@ _Not yet implemented_
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/user/login/
 ```
 
 #### Response body
@@ -304,7 +304,7 @@ _Not yet implemented_
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/user/new/
 ```
 
 #### Response body
@@ -326,7 +326,7 @@ _Not yet implemented_
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/user/update/
 ```
 
 #### Response body
@@ -348,7 +348,7 @@ _Not yet implemented_
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/user/delete/
 ```
 
 #### Response body
